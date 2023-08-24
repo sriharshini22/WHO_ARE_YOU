@@ -1,7 +1,7 @@
 # WHO_ARE_YOU
 This is a web application for the MBTI Personality Test.
 
-[![MYERS-BRIGGS TYPE INDICATOR(MBTI)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.discovermagazine.com%2Fmind%2Fthe-problem-with-the-myers-briggs-personality-test&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAE)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.discovermagazine.com%2Fmind%2Fthe-problem-with-the-myers-briggs-personality-test&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAE)
+[![MYERS-BRIGGS TYPE INDICATOR(MBTI)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F561401909805431271%2F&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAz)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F561401909805431271%2F&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAz)
 
 The Myers–Briggs Type Indicator (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. The test attempts to assign a binary value to each of four categories: introversion or extraversion, sensing or intuition, thinking or feeling, and judging or perceiving. One letter from each category is taken to produce a four-letter test result, such as "ISTJ" or "ENFP".
 
