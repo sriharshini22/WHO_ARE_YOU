@@ -45,3 +45,6 @@ However, the Myers-Briggs types differ in some important ways. First, the MBTI i
 
 Also, unlike many other psychological evaluations, your results are not compared against any norms. Instead of looking at your score in comparison to other people's results, the instrument's goal is to simply offer further information about your unique personality.
 
+TO RUN THE APPLICATION:
+
+Open WAY.html and use the login.php for Login and signup.php for SignUp. 
