@@ -1,6 +1,8 @@
 # WHO_ARE_YOU
 This is a web application for the MBTI Personality Test.
 
+[![MYERS-BRIGGS TYPE INDICATOR(MBTI)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.discovermagazine.com%2Fmind%2Fthe-problem-with-the-myers-briggs-personality-test&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAE)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.discovermagazine.com%2Fmind%2Fthe-problem-with-the-myers-briggs-personality-test&psig=AOvVaw2yvOpKV24RZovTl1D-MM-p&ust=1692962739217000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjF8OeX9YADFQAAAAAdAAAAABAE)
+
 The Myers–Briggs Type Indicator (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. The test attempts to assign a binary value to each of four categories: introversion or extraversion, sensing or intuition, thinking or feeling, and judging or perceiving. One letter from each category is taken to produce a four-letter test result, such as "ISTJ" or "ENFP".
 
 Through a series of questions, the MBTI assessment helps you identify your natural preferences in four areas of personality:
@@ -13,22 +15,22 @@ Your natural preferences in these four areas sort you into one of 16 distinct MB
 The Myers-Briggs Types
 Each type is then listed by its four-letter code:
 
-ISTJ - The Inspector: Reserved and practical, they tend to be loyal, orderly, and traditional.
-ISTP - The Crafter: Highly independent, they enjoy new experiences that provide first-hand learning.
-ISFJ - The Protector: Warm-hearted and dedicated, they are always ready to protect the people they care about.
-ISFP - The Artist: Easy-going and flexible, they tend to be reserved and artistic.
-INFJ - The Advocate: Creative and analytical, they are considered one of the rarest Myers-Briggs types.
-INFP - The Mediator: Idealistic with high values, they strive to make the world a better place.
-INTJ - The Architect: High logical, they are both very creative and analytical.
-INTP - The Thinker: Quiet and introverted, they are known for having a rich inner world.
-ESTP - The Persuader: Outgoing and dramatic, they enjoy spending time with others and focusing on the here and now.
-ESTJ - The Director: Assertive and rule-oriented, they have high principles and a tendency to take charge.
-ESFP - The Performer: Outgoing and spontaneous, they enjoy taking center stage.
-ESFJ - The Caregiver: Soft-hearted and outgoing, they tend to believe the best about other people.
-ENFP - The Champion: Charismatic and energetic, they enjoy situations where they can put their creativity to work. 
-ENFJ - The Giver: Loyal and sensitive, they are known for being understanding and generous.
-ENTP - The Debater: Highly inventive, they love being surrounded by ideas and tend to start many projects (but may struggle to finish them).
-ENTJ - The Commander: Outspoken and confident, they are great at making plans and organizing projects.
+1. ISTJ - The Inspector: Reserved and practical, they tend to be loyal, orderly, and traditional.
+2. ISTP - The Crafter: Highly independent, they enjoy new experiences that provide first-hand learning.
+3. ISFJ - The Protector: Warm-hearted and dedicated, they are always ready to protect the people they care about.
+4. ISFP - The Artist: Easy-going and flexible, they tend to be reserved and artistic.
+5. INFJ - The Advocate: Creative and analytical, they are considered one of the rarest Myers-Briggs types.
+6. INFP - The Mediator: Idealistic with high values, they strive to make the world a better place.
+7. INTJ - The Architect: High logical, they are both very creative and analytical.
+8. INTP - The Thinker: Quiet and introverted, they are known for having a rich inner world.
+9. ESTP - The Persuader: Outgoing and dramatic, they enjoy spending time with others and focusing on the here and now.
+10. ESTJ - The Director: Assertive and rule-oriented, they have high principles and a tendency to take charge.
+11. ESFP - The Performer: Outgoing and spontaneous, they enjoy taking center stage.
+12. ESFJ - The Caregiver: Soft-hearted and outgoing, they tend to believe the best about other people.
+13. ENFP - The Champion: Charismatic and energetic, they enjoy situations where they can put their creativity to work. 
+14. ENFJ - The Giver: Loyal and sensitive, they are known for being understanding and generous.
+15. ENTP - The Debater: Highly inventive, they love being surrounded by ideas and tend to start many projects (but may struggle to finish them).
+16. ENTJ - The Commander: Outspoken and confident, they are great at making plans and organizing projects.
 
 The MBTI is just one approach to personality typing. Personality typing refers to systems that categorize people based on their traits, tendencies, and other characteristics. Other popular types of personality tests include:
 
