@@ -1,7 +1,8 @@
 # WHO_ARE_YOU
 This is a web application for the MBTI Personality Test.
 
-![Uploading shutterstock_2070009056.jpg…]()
+![shutterstock_2070009056](https://github.com/sriharshini22/WHO_ARE_YOU/assets/82818345/c43a2a4b-a283-461c-8d0c-88a6e349459a)
+
 
 The Myers–Briggs Type Indicator (MBTI) is an introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions. It enjoys popularity despite being widely regarded as pseudoscience by the scientific community. The test attempts to assign a binary value to each of four categories: introversion or extraversion, sensing or intuition, thinking or feeling, and judging or perceiving. One letter from each category is taken to produce a four-letter test result, such as "ISTJ" or "ENFP".
 
