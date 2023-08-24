@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="dd.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="D:\Users\DELL\Desktop\Ammulu data files\My project\wttlogo.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-md-2 col-sm-2 col-xs-2" style="background-color:white;">
+            <img class="logo " src=https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-5"></div>
+        <div class="col-md-5 col-sm-5 col-xs-5">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <button class="btn button-56 btn-lg">Home</button>&nbsp;&nbsp;&nbsp;
+                    <button class="btn button-56 btn-lg" onclick="window.location.href='login_latest.php';">Login</button>&nbsp;&nbsp;&nbsp;
+                    <button class="btn button-56 btn-lg" onclick="window.location.href='signup_latest.php';">Sign Up</button>&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="banner-image" src="https://i.pinimg.com/236x/df/14/d5/df14d5bbdffc94b0bab8e6f7564dbbc5.jpg">
+            <div class="banner-title">The Myers–Briggs Type <br> Indicator(MBTI)</div>
+            <div class="banner-subtitle">Beyond Briggs Myers' 16 Types, <br>Find Who You Are.</div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="subtext">
+        This free personality test reveals who you <em>really</em> are.
+        Discover the 16 personalities created by Myers & Briggs,<br>
+        test your personality type, and find your strengths.
+    </div>
+    <div class="q">
+        <img id="banner-image1" src=https://i.pinimg.com/474x/3f/b6/53/3fb653a8ae9d80095c72603978d6bb39.jpg style="height: 80em;">
+        <div class="banner-title1">TO TAKE THE PERSONALITY TEST, MARK YOUR ANSWERS BASED ON HOW WELL EACH STATEMENT
+            DESCRIBES YOU.</div>
+            <div class="container1-fluid d-flex align-items-center">
+                <div class="container box" >
+                    Quiz Application
+                    <hr width="50%" color="black">
+                    <div id="question-title">Question Title</div>
+                    <div class="mb-2" id="option-list"></div>
+                    <div id="score-area">Score Area</div>
+                    <button class="btn btn-danger rounded-pill" id="submit">Submit</button><br>
+                    <button class="btn btn-primary rounded-pill" id="start">Start</button><br>
+                    <button class="btn btn-success rounded-pill" id="play-again">Play Again</button>
+                    <button class="btn btn-success rounded-pill" id="next">Next</button>
+                </div>
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+            <script src="test.js"></script>
+            <script>
+                let questionNo = 0;
+                let score = 0;
+                let question_title = document.getElementById('question-title');
+                let option_list = document.getElementById('option-list');
+                let score_area = document.getElementById('score-area');
+                let btn_submit = document.getElementById('submit');
+                let next = document.getElementById('next');
+                let start = document.getElementById('start');
+                let play_again = document.getElementById('play-again');
+        
+                hideItems(question_title);
+                hideItems(option_list);
+                hideItems(btn_submit);
+                hideItems(play_again);
+                hideItems(score_area);
+                hideItems(next);
+        
+                start.addEventListener('click', function () {
+                    show(question_title);
+                    show(option_list);
+                    hideItems(btn_submit);
+                    loadQuestions();
+                    hideItems(start);
+                    hideItems(next);
+                });
+                const p = [31];
+                function loadQuestions() {
+                    var o;
+                    if (questionNo < data.length) {
+                        let q = data[questionNo].qs;
+        
+                        let optionsArray = data[questionNo].options;
+        
+                        question_title.innerText = q;
+                        //console.log("you selected: " + p[j]);
+                        option_list.innerText = "";
+                        for (let k = 0; k <= 31; k++) {
+                            `
+                                <input name="${question_title}" ></input><br>
+                                `;
+        
+                        }
+        
+                        for (let i = 0; i < optionsArray.length; i++) {
+                            console.log("your qno " + questionNo);
+        
+                            option_list.innerHTML = option_list.innerHTML +
+                                `
+                                <input type="radio" onclick = "play()"  id="${i}" name="${question_title}" >${optionsArray[i]}</input><br>
+                                `;
+                        }
+        
+                        /*     if(questionNo>31)
+                               {
+                                   show(btn_submit);
+                                   hideItems(next);
+                                   
+                                   
+                               }*/
+        
+                    }
+                    /*    else  {
+                             console.log("no more questions");
+                             show(btn_submit);
+             
+                         }*/
+                }
+                play_again.addEventListener('click', function () {
+                    location.reload();
+                    hideItems(next);
+                })
+                    ;
+                btn_submit.addEventListener('click', function () {
+        
+                    show(score_area);
+        
+                    var x = cal_per(p);
+                    score_area.innerText = "Your Score is:" + x;
+                    score_area.innerText =  document.getElementById("demo").onclick = function () {
+         
+                         //Call for a custom made function 
+                         displayper(x);
+                    }
+         
+        
+                    function displayper(x) {
+                        var repImage = '<img src="';
+                        if (x == "INFP") {
+                            repImage += "https://i.pinimg.com/564x/7d/f6/71/7df671c8ff7dd65c1c1b61f59f4d46d5.jpg";
+                        }
+                        else if (x == "ISTJ") {
+                            repImage += "https://i.pinimg.com/564x/bc/df/fa/bcdffa41e8ced3ef66836f4551961ef8.jpg";
+                        }
+                        else if (x == "ISTP") {
+                            repImage += "https://i.pinimg.com/474x/ae/ce/bc/aecebcf7e18b59280e021e407c385d41.jpg";
+                        }
+                        else if (x == "ISFJ") {
+                            repImage += "https://i.pinimg.com/474x/96/a6/6f/96a66f5c8d07cf2454d7a313baf7e9e4.jpg";
+                        }
+                        else if (x == "ISFP") {
+                            repImage += "https://i.pinimg.com/474x/51/da/7e/51da7e7d9ba713ceaeea2e5f60b91de6.jpg";
+                        }
+                        else if (x == "INFJ") {
+                            repImage += "https://i.pinimg.com/474x/51/da/7e/51da7e7d9ba713ceaeea2e5f60b91de6.jpg";
+                        }
+                        else if (x == "INTJ") {
+                            repImage += "https://i.pinimg.com/474x/0b/20/4d/0b204d8f2d63ccb240c2b63f0215ddb0.jpg";
+                        }
+                        else if (x == "INTP") {
+                            repImage += "https://i.pinimg.com/474x/7d/f6/71/7df671c8ff7dd65c1c1b61f59f4d46d5.jpg";
+                        }
+                        else if (x == "ESTP") {
+                            repImage += "https://i.pinimg.com/474x/35/43/09/3543091dc51e0e8d25ed7498cb574541.jpg";
+                        }
+                        else if (x == "ESTJ") {
+                            repImage += "https://i.pinimg.com/474x/bf/a8/a1/bfa8a1dd9860bb5ad9281663f66e0d6f.jpg";
+                        }
+                        else if (x == "ESFP") {
+                            repImage += "https://i.pinimg.com/474x/bc/fc/21/bcfc213b569429135330eaf83e41c679.jpg";
+                        }
+                        else if (x == "ESFJ") {
+                            repImage += "https://i.pinimg.com/474x/04/5b/a6/045ba6badc0e5254e64d8d94aa537239.jpg";
+                        }
+                        else if (x == "ENFP") {
+                            repImage += "https://i.pinimg.com/474x/2d/08/4b/2d084b34e2d3ff104c16888881cca889.jpg";
+                        }
+                        else if (x == "ENFJ") {
+                            repImage += "https://i.pinimg.com/474x/b0/f7/7c/b0f77c42bc1a9a12bfcb1f9ccd4f3a6f.jpg";
+                        }
+                        else if (x == "ENTP") {
+                            repImage += "https://i.pinimg.com/474x/35/54/53/3554534284847d9a1a257e6104a80198.jpg";
+                        }
+                        else {
+                            repImage += "https://i.pinimg.com/474x/8f/b6/5e/8fb65ee4e0dc8189f707aa9956a2af4b.jpg";
+                        }
+                        document.getElementById("demo").innerHTML = repImage;
+        
+                    }
+        
+        
+                    //  perprint();
+                    //  score_area.innerText="Your "+ points;
+                    hideItems(btn_submit);
+                    hideItems(next);
+                    show(play_again)
+                })
+        
+                /*-  ! function perprint(p){
+                       score_area.innerText = "Your options is:";
+                       for ( let o =0; o<=31; o++){
+                           score_area.innerText = "Your Score is:" + p[o];
+                       }*/
+        
+                function play() {
+                    if (questionNo < 32) {
+                        //show(next);
+                        showNext();
+                    }
+                    else {
+                        show(btn_submit);
+                    }
+                }
+                function showNext() {
+        
+                    show(next);
+                    questionNo = questionNo + 1;
+        
+                    next.addEventListener('click', function () {
+        
+                        let id = getCheckedId();
+                        var sel = id;
+                        arr_num = questionNo - 1;
+                        // const p = [];
+        
+                        try {
+                            if (id > 0) {
+                                p[arr_num] = id;
+                                p.push();
+                                //for (let j = 0; j <= 32; j++) {
+                                //   p.push(sel + 1);
+                                console.log("you selected: " + p[arr_num]);
+                                //  }
+                            }
+        
+        
+                        }
+                        catch (error) { }
+                        hideItems(next);
+                        loadQuestions();
+                        /*  if(questionNo==32){
+                              loadQuestions();
+                              show(btn_submit);
+                          }
+          */
+        
+        
+                    })
+                }
+        
+                function getCheckedId() {
+                    for (let f = 0; f <= 4; f++) {
+                        if (document.getElementById(f).checked) {
+                            //     console.log("you selected: " + f);
+                            return f;
+                        }
+        
+                    }
+                }
+                function cal_per(p) {
+                    var ie, sn, ft, jp;
+                    var IE = 0, SN = 0, FT = 0, JP = 0;
+                    IE = 30 - p[2] - p[6] - p[10] + p[14] - p[18] + p[22] + p[26] - p[30];
+                    console.log(p[2], p[6], p[10], p[14], p[18], p[22], p[26], p[30]);
+                    console.log(IE);
+                    if (IE <= 24) {
+                        ie = "I";
+                    }
+                    else {
+                        ie = "E";
+                    }
+                    SN = 12 + p[3] + p[7] + p[11] + p[15] + p[19] - p[23] - p[27] + p[31];
+                    console.log(p[3], p[7], p[11], p[15], p[19], p[23], p[27], p[31]);
+                    console.log(SN);
+                    if (SN <= 24) {
+                        sn = "S";
+                    }
+                    else {
+                        sn = "N";
+                    }
+                    FT = 30 - p[1] + p[5] + p[9] - p[13] - p[17] + p[21] - p[25] - p[29];
+                    console.log(p[1], p[5], p[9], p[13], p[17], p[21], p[25], p[29]);
+                    console.log(FT);
+                    if (FT <= 24) {
+                        ft = "F";
+                    }
+                    else {
+                        ft = "T";
+                    }
+                    JP = 18 + p[0] + p[4] - p[8] + p[12] - p[16] + p[20] - p[24] + p[28];
+                    console.log(p[0], p[4], p[8], p[12], p[16], p[20], p[24], p[28]);
+                    console.log(JP);
+                    if (JP <= 24) {
+                        jp = "J";
+                    }
+                    else {
+                        jp = "P";
+                    }
+                    var per = ie.concat(sn, ft, jp);
+        
+                    console.log(per);
+                    return per;
+                } 
+                function hideItems(element) {
+                    element.style.display = "none";
+                }
+                function show(element) {
+                    element.style.display = "block";
+                }
+            </script>
+    </div>
+
+    <div class="logo1">
+        <img class="logo1" src="https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg">
+    </div>
+    <div class="social-btns">
+        <a class="btn facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a class="btn twitter" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+        <a class="btn instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a class="btn linkedin" href="http://linkedin.com/in/srithin-chillamcharla-2524871b1"><i
+                class="fa fa-linkedin"></i></a>
+        <a class="btn github" href=https://github.com/sriharshini22><i class="fa fa-github"></i></a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>    
+    <hr style="height:2px;border-width:0;color:#80976a;background-color:#80976a">
+</body>
+
+</html>

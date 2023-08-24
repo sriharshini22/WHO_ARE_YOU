@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/474x/49/30/bb/4930bb33a7cfcf060dcbf18d2aa92379.jpg">
+
+</head>
+<body>
+  <style type="text/css">
+    body{
+      background-color: #f1f1f1;
+    }
+    #header .navbar-light .navbar-nav .nav-link:focus,
+    #header .navbar-light .navbar-nav .nav-link:hover {
+        /* color: #80976a; */
+        color:pink;
+    }
+    #header nav{
+      padding: 15px 0px ;
+      /* background-color: blue; */
+    }
+    #header .navbar-light .navbar-nav .nav-link {
+      color: #837f8d;
+      font-size: 15px;
+      font-family: 'Chonburi', cursive;
+    }
+    #header {
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        float: left;
+        width: 100%;
+    }
+    #header ul.navbar-nav {
+        position: absolute;
+        right: 0;
+    }
+    #header li.nav-item {
+        margin: 0px 10px;
+    }
+    #header .navbar-light .navbar-nav .active>.nav-link, #header .navbar-light .navbar-nav .nav-link.active, #header .navbar-light .navbar-nav .nav-link.show, #header .navbar-light .navbar-nav .show>.nav-link {
+        color: #837f8d;
+    }
+    #header .dropdown-menu.show {
+        border: none;
+    }
+    .topbar {
+        background-color: #fddf7e;
+        color: #fff;
+        padding: 4px 0px;
+    }
+    .topbar ul{
+      /* background-color: blue; */
+      margin: 0px;
+      padding: 0px;
+    }
+    .topbar ul li {
+        float: left;
+        list-style: none;
+        margin: 3px 7px;
+        font-size: 15px;
+    }
+    .topbar ul li a{
+      color: #fff;
+    }
+    .topbar ul li i {
+      color: black;
+        font-size: 15px;
+        margin-right: 3px;
+    }
+    .topbar ul li.followus-label {
+        font-weight: bold;
+    }
+    #header .social-icon {
+        float: right;
+    }
+    @media (max-width: 991px){
+    .topbar ul li {
+        margin: 3px 3px;
+        font-size: 12px;
+    }
+    #header ul.navbar-nav {
+        position: static;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        margin: 15px 0px 0px;
+    }
+    }
+    /* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+    .banner-subtitle{
+    font-size: 1.5em;
+  }
+  .banner-title{
+    font-size: 3.2em;
+  }
+  .subtext{
+    font-size: 1em;
+  }
+  .banner-title1{
+    font-size: 1.1em;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+    .banner-subtitle{
+    font-size: 1em;
+  }
+  .banner-title{
+    font-size: 2.8em;
+  }
+  .subtext{
+        font-size: 0.5em;
+  }
+  .banner-title1{
+    font-size: 0.6em;
+  }
+}
+  .image-container{
+  padding-top: 8em;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+.banner-title{
+    position: absolute;
+    top: 39%;
+    left: 28%;
+    color: #fff8e2;
+    font-size: 3.2em;
+    font-family: 'Playfair Display', serif;
+}
+.banner-subtitle{
+    position: absolute;
+    top: 65%;
+    left: 32.8%;
+    color: #487846;
+    font-size: 1.5em;
+    font-family: 'Cinzel', serif;
+}
+.subtext{
+   text-align: center;
+   font-family: 'Lora', serif;
+    font-size: 1em;
+    color: #798777;
+}
+.banner-title1{
+    position: absolute;
+    padding-top: 50px;
+    padding-left: 16em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif;
+    color:#907FA4;
+}
+.box {
+            text-align: center;
+            padding-left: 15em;
+            height: 20em;
+            width: 50em;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 7%;
+        }
+        .container1-fluid {
+            padding-left: 15em;
+            margin-top: 7%;
+            height: 20em;
+            width: 30em;
+        }
+            .card-title{
+                font-family: 'Chonburi', cursive;
+            }
+            .card-text{
+                font-family: 'Lora', serif;
+                text-align: justify;
+            }
+    </style>
+<div id="header">
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="social-icon">
+            <li class="followus-label" style="color: black;">Follow Us:</li>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg" ><img src="https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg" alt="logo" style="width: 320px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbartoggle">
+              <ul class="navbar-nav float-right">
+                <li class="nav-item active">
+                  <a class="nav-link" href="WAY.html">Home <span class="sr-only">(current)</span></a>
+                </li>     
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://github.com/sriharshini22" style="font-family: 'Cinzel', serif;">Sri Harshini</a>
+                    <a class="dropdown-item" href="https://twitter.com/i/flow/login" style="font-family: 'Cinzel', serif;">Bipin Yadav</a>
+                    <a class="dropdown-item" href="http://linkedin.com/in/srithin-chillamcharla-2524871b1" style="font-family: 'Cinzel', serif;">Srithin</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/" style="font-family: 'Cinzel', serif;">Srinith</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/" style="font-family: 'Cinzel', serif;">Asha Reddy</a>
+                  </div>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="login_latest.php">Login</a>
+              </li>     
+              <li class="nav-item">
+                <a class="nav-link" href="signup_latest.php">Sign Up</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contact Us</a>
+                </li>               
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>  
+  </header>
+</div>
+  <div class="image-fluid">
+    <img src="https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=589&q=80" style="width: 1263px; height: 360px;" class="image-fluid" alt="responsive image">
+    <div class="banner-title">The Myers-Briggs Type <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicator(MBTI)</div>
+    <div class="banner-subtitle">Beyond Briggs Myers' 16 Types, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find Who You Are.</div>
+  </div>
+  <br><br>
+    <div class="subtext">
+        This free personality test reveals who you <em>really</em> are.
+        Discover the 16 personalities created by Myers & Briggs,<br>
+        test your personality type, and find your strengths.
+    </div>
+    <hr style="height:2px;width:50%; margin-left:20em; color:#80976a;background-color:#80976a">
+    <br><br>
+    <div class="image1-fluid" style="position: relative;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAACUCAMAAAD70yGHAAAAA1BMVEXk9fdDgzfhAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBnA8UkAAEmGMCJAAAAAElFTkSuQmCC" 
+      height="496px" width="1263px" class="image-fluid"  style="position: absolute;" alt="responsive image">
+      <div class="banner-title1" style="position:absolute;">TO TAKE THE PERSONALITY TEST, MARK YOUR ANSWERS BASED ON HOW WELL EACH STATEMENT
+        DESCRIBES YOU.</div>
+        <div class="container1-fluid d-flex align-items-center" style="position: absolute;">
+            <div class="container box" style="font-family: 'Cinzel', serif; font-weight: bolder; position: absolute;">
+                Quiz Application
+                <hr width="50%"  style="padding-left: 25em;" color="black">
+                <div id="question-title">Question Title</div>
+                <div class="mb-2" id="option-list"></div>
+                <div id="score-area">Score Area</div>
+                <button class="btn btn-outline-danger rounded-pill" id="submit">Submit</button><br>
+                <button class="btn btn-outline-secondary rounded-pill" id="start">Start</button><br>
+                <button class="btn btn-outline-dark rounded-pill" id="play-again">Play Again</button>
+                <button class="btn btn-outline-info rounded-pill" id="next">Next</button>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="NEWTEST.js"></script>
+        <script>
+            let questionNo = 0;
+            let score = 0;
+            let question_title = document.getElementById('question-title');
+            let option_list = document.getElementById('option-list');
+            let score_area = document.getElementById('score-area');
+            let btn_submit = document.getElementById('submit');
+            let next = document.getElementById('next');
+            let start = document.getElementById('start');
+            let play_again = document.getElementById('play-again');
+
+            hideItems(question_title);
+            hideItems(option_list);
+            hideItems(btn_submit);
+            hideItems(play_again);
+            hideItems(score_area);
+            hideItems(next);
+
+            start.addEventListener('click', function () {
+                show(question_title);
+                show(option_list);  
+                hideItems(btn_submit);
+                loadQuestions();
+                hideItems(start);
+                hideItems(next);
+            });
+            const p = [31];
+            function loadQuestions() {
+                var o;
+                if (questionNo < data.length) {
+                    let q = data[questionNo].qs;
+
+                    let optionsArray = data[questionNo].options;
+
+                    question_title.innerText = q;
+                    // console.log("you selected: " + p[j]);
+                    option_list.innerText = "";
+                    for (let k = 0; k <= 31; k++) {
+                        `
+                                <input name="${question_title}" ></input><br>
+                                `;
+
+                    }
+
+                    for (let i = 0; i < optionsArray.length; i++) {
+                        console.log("your qno " + questionNo);
+
+                        option_list.innerHTML = option_list.innerHTML +
+                            `
+                                <input type="radio" onclick = "play()"  id="${i}" name="${question_title}" >${optionsArray[i]}</input><br>
+                                `;
+                    }
+
+                    /*     if(questionNo>31)
+                           {
+                               show(btn_submit);
+                               hideItems(next);
+                               
+                               
+                           }*/
+
+                }
+                /*    else  {
+                         console.log("no more questions");
+                         show(btn_submit);
+         
+                     }*/
+            }
+            play_again.addEventListener('click', function () {
+                location.reload();
+                hideItems(next);
+            })
+                ;
+            btn_submit.addEventListener('click', function () {
+
+                show(score_area);
+
+                var x = cal_per(p);
+                score_area.innerText = "Your Score is:" + x;
+                //  score_area.innerText="Your "+ points;
+                hideItems(btn_submit);
+                hideItems(next);
+                show(play_again);
+            })
+
+            /*-  ! function perprint(p){
+                   score_area.innerText = "Your options is:";
+                   for ( let o =0; o<=31; o++){
+                       score_area.innerText = "Your Score is:" + p[o];
+                   }*/
+
+            function play() {
+                if (questionNo < 32) {
+                    //show(next);
+                    showNext();
+                }
+                else {
+                    show(btn_submit);
+                }
+            }
+            function showNext() {
+
+                show(next);
+                questionNo = questionNo + 1;
+
+                next.addEventListener('click', function () {
+
+                    let id = getCheckedId();
+                    var sel = id;
+                    var cho = id + 1;
+                    arr_num = questionNo - 1;
+                    // const p = [];
+
+                    try {
+                        if (cho > 0) {
+                            p[arr_num] = cho;
+                            p.push();
+                            s = p[arr_num] + 1;
+                            //for (let j = 0; j <= 32; j++) {
+                            //   p.push(sel + 1);
+                            console.log("you selected: " + cho);
+                            //  }
+                        }
+
+
+                    }
+                    catch (error) { }
+                    hideItems(next);
+                    loadQuestions();
+                    if(questionNo==32){
+                          loadQuestions();
+                          show(btn_submit);
+                    }
+                    
+
+
+                })
+            }
+
+            function getCheckedId() {
+                for (let f = 0; f <= 4; f++) {
+                    if (document.getElementById(f).checked) {
+                        //     console.log("you selected: " + f);
+                        return f;
+                    }
+
+                }
+            }
+            function cal_per(p) {
+                var ie, sn, ft, jp;
+                var IE = 0, SN = 0, FT = 0, JP = 0;
+                IE = 30 - p[2] - p[6] - p[10] + p[14] - p[18] + p[22] + p[26] - p[30];
+                console.log(p[2], p[6], p[10], p[14], p[18], p[22], p[26], p[30]);
+                console.log(IE);
+                if (IE <= 24) {
+                    ie = "I";
+                }
+                else {
+                    ie = "E";
+                }
+                SN = 12 + p[3] + p[7] + p[11] + p[15] + p[19] - p[23] - p[27] + p[31];
+                console.log(p[3], p[7], p[11], p[15], p[19], p[23], p[27], p[31]);
+                console.log(SN);
+                if (SN <= 24) {
+                    sn = "S";
+                }
+                else {
+                    sn = "N";
+                }
+                FT = 30 - p[1] + p[5] + p[9] - p[13] - p[17] + p[21] - p[25] - p[29];
+                console.log(p[1], p[5], p[9], p[13], p[17], p[21], p[25], p[29]);
+                console.log(FT);
+                if (FT <= 24) {
+                    ft = "F";
+                }
+                else {
+                    ft = "T";
+                }
+                JP = 18 + p[0] + p[4] - p[8] + p[12] - p[16] + p[20] - p[24] + p[28];
+                console.log(p[0], p[4], p[8], p[12], p[16], p[20], p[24], p[28]);
+                console.log(JP);
+                if (JP <= 24) {
+                    jp = "J";
+                }
+                else {
+                    jp = "P";
+                }
+                var per = ie.concat(sn, ft, jp);
+
+                console.log(per);
+                return per;
+            }
+            function hideItems(element) {
+                element.style.display = "none";
+            }
+            function show(element) {
+                element.style.display = "block";
+            }
+        </script>
+    </div>
+
+    <div class="logo1">
+        <img class="logo1" src="https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg">
+    </div>
+    <div class="social-btns">
+        <a class="btn facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a class="btn twitter" href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+        <a class="btn instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a class="btn linkedin" href="http://linkedin.com/in/srithin-chillamcharla-2524871b1"><i
+                class="fa fa-linkedin"></i></a>
+        <a class="btn github" href=https://github.com/sriharshini22><i class="fa fa-github"></i></a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <div class="row row-cols-1 row-cols-md-3" style="margin-top: 10%">
+        <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/e8/3b/c0/e83bc012621e7031504b661abbe5b904.jpg" style="height: 25em;" class="card-img-top" 
+              alt="INFP">
+              <div class="card-body">
+                <h5 class="card-title">The Idealist - INFP</h5>
+                <p class="card-text" >INFPs, like most introverts, are quiet and reserved. 
+                    This personality type prefers not to talk about themselves, especially upon first meeting a new person. 
+                    They prefer spending time alone in quiet places. 
+                    This provides the opportunity for the INFP to make sense of the world around them. INFPs love analyzing signs and symbols, often considering them to be metaphors that have deeper meanings related to life.
+                     This personality type can become lost in their imagination and daydreams. This occasionally leads to the INFP drowning in the depth of their thoughts, fantasies, and ideas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/a6/ae/e7/a6aee78e1789ff91dc3279ee811b961e.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ISTJ">
+              <div class="card-body">
+                <h5 class="card-title">The Inspector - ISTJ</h5>
+                <p class="card-text">The ISTJ can be considered an intimidating personality type to approach, especially without a prior relationship. ISTJs appear serious, formal, and proper. This personality type places great importance on tradition and old-school values. Patience, hard work, honor and social and cultural responsibility are all cherished by the ISTJ. They are reserved, calm, quiet, and upright. These traits result from the combination of Introversion, Sensing, Thinking, and Judging. 
+                    The result is a personality type that is often misunderstood.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/93/a0/2f/93a02fd34d8879bd26ac29b4e0a9da97.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ISTP">
+              <div class="card-body">
+                <h5 class="card-title">The Craftsman - ISTP</h5>
+                <p class="card-text">ISTPs are mysterious and oft-misunderstood people. This personality type is typically defined by rationality and logic but is also capable of spontaneity and enthusiasm. The personality traits of the ISTP are tougher to recognize than those of other types. 
+                    Even people who know the ISTP well cannot always anticipate their reactions. Deep down, ISTPs are spontaneous, unpredictable individuals, but they sometimes hide those traits from the outside world, favoring an approach of logic and culpability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/31/f1/43/31f1431ecce0a8c324d6f59caf987ee6.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ISFJ">
+              <div class="card-body">
+                <h5 class="card-title">The Nurturer - ISFJ</h5>
+                <p class="card-text">ISFJs are philanthropists. This personality type is always ready to give back, and any generosity received will be returned threefold. The people and things an ISFJ believes in will be upheld, and supported with enthusiasm and unselfishness. This makes this among the most warm and kind-hearted personality types.
+                     Harmony and cooperation are important to the ISFJ, and this type is likely to be sensitive to the feelings of others. 
+                    The ISFJ is valued for their consideration and awareness, and often bring out the best in others.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/2f/ee/c9/2feec94520cbfa6e1c8311331a718ce3.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ISFP">
+              <div class="card-body">
+                <h5 class="card-title">The Composer - ISFP</h5>
+                <p class="card-text">ISFPs are introverts but may not always seem this way. Even if an ISFP has difficulties connecting to other people initially, they eventually grow warm, approachable, and friendly. ISFPs are fun to be around and very spontaneous. This makes them the perfect friend to tag along with an activity, planned or unplanned. ISFPs look to live life to the fullest and embrace the present. This ensures they are always keen to encounter a new experience or make a discovery. 
+                    ISFPs find wisdom in understanding, so they find more value in meeting new people than other introverted personality types.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/48/71/39/4871394b5a5772a45a982de4cacd7f97.jpg" style="height: 25em;" class="card-img-top" alt="INFJ">
+              <div class="card-body">
+                <h5 class="card-title"> The Counselor - INFJ</h5>
+                <p class="card-text">INFJs are visionaries and idealists. This personality type oozes creative imagination and brilliant ideas from every pore. They have a different, frequently profound, way of looking at the world that is not always understood. INFJs favor substance and depth in the way they think. This personality type will never accept anything at surface level or refuse to countenance a better way to approach problems. 
+                    Others may perceive the INFJ as odd or amusing due to this variable outlook on life.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/d0/0c/ad/d00cad95ac1ae54ecc4029649e0d11bc.jpg" style="height: 25em;" class="card-img-top" 
+              alt="INTJ">
+              <div class="card-body">
+                <h5 class="card-title">The MasterMind - INTJ</h5>
+                <p class="card-text">INTJs are true introverts. This personality type tends to be quiet, reserved and comfortable in their own company. INTJs are usually self-sufficient and prefer to work alone than in a group. Socializing significantly drains the energy of this personality type, causing them to need to recharge. Do not weight down an INTJ with small talk! They are more interested in big ideas and theories. When observing the world, INTJs regularly question why things happen the way they do. Uncertainty is the enemy of the INTJ. 
+                    They excel at developing plans and strategies for every eventuality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/20/ac/7c/20ac7ccfaccff43065f4121ae8daca04.jpg" style="height: 25em;" class="card-img-top" 
+              alt="INTP">
+              <div class="card-body">
+                <h5 class="card-title">The Thinker - INTP</h5>
+                <p class="card-text">INTPs are highly regarded for brilliant theories and unrelenting logic. This makes sense, as this personality type is arguably the most logical of all. INTPs love patterns, have a keen eye for picking up on discrepancies, and possess the ability to read people. This makes it inadvisable to lie to an INTP. People of this personality type lack interest in practical, day-to-day activities and maintenance.
+                     When an INTP finds an environment that provides the opportunity to stretch their creative muscles, there is no limit to the time and energy expended. A sensible and unbiased solution becomes likely.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/2f/ee/c9/2feec94520cbfa6e1c8311331a718ce3.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ESTP">
+              <div class="card-body">
+                <h5 class="card-title">The Doer - ESTP</h5>
+                <p class="card-text">ESTPs have an Extroverted, Sensing, Thinking, and Perceptive personality. ESTPs live for social interaction, drawing power from feelings and emotions. This does not mean that ESTPs are flippant. They enjoy logical processes and reasoning, provided this does not stand in the way of freedom in thought and deed. 
+                    Theory and abstracts will not retain the attention or interest of an ESTP for long. This personality type prefers to leap before they look, fixing mistakes as they go. This is preferable to sitting idle or preparing contingency plans.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/64/70/8c/64708ce3765e8ffb4961bfaf41e615fd.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ESTJ">
+              <div class="card-body">
+                <h5 class="card-title">The Supervisior - ESTJ</h5>
+                <p class="card-text">ESTPs have an Extroverted, Sensing, Thinking, and Perceptive personality. ESTPs live for social interaction, drawing power from feelings and emotions. This does not mean that ESTPs are flippant. They enjoy logical processes and reasoning, provided this does not stand in the way of freedom in thought and deed. 
+                    Theory and abstracts will not retain the attention or interest of an ESTP for long. This personality type prefers to leap before they look, fixing mistakes as they go. This is preferable to sitting idle or preparing contingency plans.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/2d/f5/fc/2df5fcb604db16adcb624e92ce7b2539.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ESFP">
+              <div class="card-body">
+                <h5 class="card-title">The Perfomer - ESFP</h5>
+                <p class="card-text">ESFPs have an Extroverted, Observant, Feeling and Perceiving personality, and are commonly seen as Entertainers. Born to provide amusement and distraction to others and to hog the limelight, ESFPs love to hold court in a group. ESFPs are thoughtful explorers who enjoy learning – and sharing what they learn with others. ESFPs live for company, and typically have strong interpersonal skills. 
+                    They are lively and fun, and will never decline the opportunity to be the center of attention. Despite this court jester-like demeanor however, ESFPs are warm, generous, and friendly. They are also typically sympathetic and concerned for the well-being of others.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/19/85/92/1985922776f1052b51bf5477d8155957.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ESFJ">
+              <div class="card-body">
+                <h5 class="card-title">The Provider - ESFJ</h5>
+                <p class="card-text">ESFJs are the stereotypical extroverts. This personality type is effortlessly social, born of a need to interact with others. This desire to make others happy usually results in popularity for the ESFJ. The ESFJ often tends to be the cheerleader or sports hero in high school and college. 
+                    Later in life, they continue to revel in the spotlight. ESFJs are primarily focused on organizing social events for their families, friends and communities. ESFJ is a common personality type and one that is liked by many people.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/ad/61/f1/ad61f1d0c9864afb4564c5c6e6ca3f28.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ENFP">
+              <div class="card-body">
+                <h5 class="card-title">The Champion - ENFP</h5>
+                <p class="card-text">ENFPs have an Extroverted, Intuitive, Feeling and Perceiving personality. This personality type is highly individualistic. Champions are not followers, and care little for the status quo. 
+                    Instead, they strive toward creating their own methods, looks, actions, habits, and ideas. ENFPs do not welcome cookie cutter people into their circle and loathe being forced to live inside a box. They do enjoy company though – assuming it is the “right” company – enjoying strong intuition when it comes to themselves and others. ENFPs operate from their feelings most of the time. This is no bad thing, as they are highly perceptive and thoughtful.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/23/7c/16/237c16ab49562e01f791dc047e61affc.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ENFJ">
+              <div class="card-body">
+                <h5 class="card-title">The Giver - ENFJ</h5>
+                <p class="card-text">ENFJs are eternal people-pleasers. They are extroverted, idealistic, charismatic, outspoken, highly principled and ethical. This set of traits ensures that an ENFJ can usually connect with others of varying backgrounds and personalities. ENFJs rely more on intuition and feelings, living more in their imagination than the real world.
+                     This can be troublesome, for the individual themselves and those around them. Rather than living in the, “now” and what is currently happening, ENFJs tend to concentrate on the abstract and what could possibly unfold in the future.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/564x/80/86/90/8086900ff8a8a4c100b78361c8a88fa4.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ENTP">
+              <div class="card-body">
+                <h5 class="card-title">The Visionary - ENTP</h5>
+                <p class="card-text">The ENTP personality is among the rarest in the world, which is understandable. Although they are extroverts, ENTPs reject small talk – and may not thrive in social situations. This is especially true is the ENTP is surrounded by vastly different personality types. ENTPs are intelligent and knowledgeable, and as a result they need to be constantly mentally stimulated. 
+                    This personality types relishes the opportunity to discuss theories and facts in extensive detail, needing little encouragement to set the world to rights. ENTPs are logical, rational and objective in their approach to information and arguments. They expect the same from a debating partner.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-25">
+              <img src="https://i.pinimg.com/474x/12/ae/a4/12aea4b53a3fa5bc06340d1efa36169c.jpg" style="height: 25em;" class="card-img-top" 
+              alt="ENTJ">
+              <div class="card-body">
+                <h5 class="card-title">The Commander - ENTJ</h5>
+                <p class="card-text">An ENTJ's primary concern is focus is managing external circumstances with logic and discipline. Once this has been achieved, intuition and reasoning take effect. ENTJs are the most natural leaders among the 16 personality types. This personality type will always relish the opportunity to take charge. 
+                    ENTJs live in a world of possibilities, often viewing challenges and obstacles great opportunities to push themselves. They have a natural gift for leadership and never shirk from making decisions. Options and ideas will be quickly yet carefully reviewed. ENTJs are “take charge” people who do not like to sit still and allow life to happen around them.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr style="height:2px;width:50%; margin-left:20em; color:#80976a;background-color:#80976a">
+      <footer class="footer-16371" style="margin-top: 0%;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+              <div class="footer-site-logo mb-4">
+                <a href="https://i.pinimg.com/564x/70/fc/3a/70fc3a89cdc658856f5c36328346c560.jpg">Who Are You</a>
+              </div>
+              <ul class="list-unstyled nav-links mb-5">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">MBTI Personalities</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+  
+              <div class="social mb-4">
+                <h3 style="font-family: 'Playfair Display', serif;">Stay in touch</h3>
+                <br>
+                <ul class="list-unstyled">
+                  <li class="in"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
+                  <li class="fb"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+                  <li class="tw"><a href="https://twitter.com/i/flow/login"><span class="icon-twitter"></span></a></li>
+                  <li class="git"><a href="https://github.com/sriharshini22"><span class="icon-github"></span></a></li>
+                  <li class="li"><a href="http://linkedin.com/in/srithin-chillamcharla-2524871b1"><span class="icon-linkedin"></span></a></li>
+                </ul>
+              </div>
+  
+              <div class="copyright">
+                <p class="mb-0"><small>&copy; Who Are You. All Rights Reserved.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
